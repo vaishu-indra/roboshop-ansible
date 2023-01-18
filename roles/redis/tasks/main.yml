@@ -9,7 +9,7 @@
 
 - name: Install redis Server
   ansible.builtin.yum:
-    name: "{{redis}}"
+    name: redis
     state: installed
 
 - name: Update redis listen address
