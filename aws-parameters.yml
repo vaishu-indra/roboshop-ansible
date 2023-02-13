@@ -25,8 +25,8 @@
         - {name: "dev.payment.AMQP_USER", value: "roboshop" }
         - {name: "dev.shipping.CART_ENDPOINT", value: "cart-dev.learndevopsb70.online" }
         - {name: "dev.shipping.DB_HOST", value: "mysql-dev.learndevopsb70.online" }
-        - { name: "dev.user.MONGO", value: "true" }
-        - { name: "dev.user.MONGO_URL", value: "mongodb://mongodb-dev.learndevopsb70.online:27017/users" }
+        - {name: "dev.user.MONGO", value: "true" }
+        - {name: "dev.user.MONGO_URL", value: "mongodb://mongodb-dev.learndevopsb70.online:27017/users" }
         - {name: "dev.user.REDIS_HOST", value: "redis-dev.learndevopsb70.online" }
 
        ### PASSWORDS SHOULD NEVER BE KEPT IN THESE REPOS, THOSE SHOULD BE CREATED MANUALLY, BUT FOR LAB PURPOSEIAM CREATING HERE
