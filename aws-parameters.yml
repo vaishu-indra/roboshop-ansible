@@ -29,12 +29,12 @@
         - { name: "dev.user.MONGO_URL", value: "mongodb://mongodb-dev.learndevopsb70.online:27017/users" }
         - {name: "dev.user.REDIS_HOST", value: "redis-dev.learndevopsb70.online" }
 
-
+       ### PASSWORDS SHOULD NEVER BE KEPT IN THESE REPOS, THOSE SHOULD BE CREATED MANUALLY, BUT FOR LAB PURPOSEIAM CREATING HERE
     - name: Create secrets
       community.aws.aws_ssm_parameter_store:
         name: "{{ item.name }}"
         value: "{{ item.value }}"
         region: us-east-1
-        string_type: "securestring"
+        string_type: "SecureString"
       loop:
         - {name: "dev.payment.AMQP_PASS", value: "roboshop123" }
